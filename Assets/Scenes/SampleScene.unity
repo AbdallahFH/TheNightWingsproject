@@ -1856,11 +1856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 10
-  jumpForce: 5
-  rotationSpeed: 10
+  jumpForce: 8
+  rotationSpeed: 15
   DumpTime: 0.1
   AnimSmooth: 0.3
-  RbVelo: 0
 --- !u!136 &863183501
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1893,7 +1892,7 @@ Rigidbody:
   m_GameObject: {fileID: 863183498}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1929,7 +1928,7 @@ GameObject:
   - component: {fileID: 1507889578}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

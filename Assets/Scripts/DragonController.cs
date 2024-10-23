@@ -15,7 +15,6 @@ public class DragonController : MonoBehaviour
 
     private CameraController cameraController;
     Animator animator;
-    public float RbVelo;
     bool IsFlying;
     void Start()
     {
@@ -47,6 +46,9 @@ public class DragonController : MonoBehaviour
             IsFlying = false;
         }
         if(Input.GetKeyDown(KeyCode.F)){
+            if(!IsFlying){
+                rb.AddForce(Vector3.up*jumpForce,ForceMode.Impulse);
+            }
             IsFlying = !IsFlying;
         }
 
